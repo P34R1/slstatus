@@ -65,7 +65,6 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
     /* function format          argument */
-    { ipv4, "[LAN IP %s] ", "eno1" },
-    { ipv4, "[WLAN IP %s] ", "lo" },
-    { datetime, "[%s]", "%a, %b %d|%I:%M:%S" }
+    { ipv4, "%s  ", "eno1" },
+    { datetime, "%s", "%a, %b %d | %I:%M:%S" }
 };
