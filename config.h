@@ -1,1 +1,0 @@
-/home/pearl/slstatus/config.def.h
