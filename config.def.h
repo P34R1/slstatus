@@ -64,8 +64,8 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function format          argument */
-        { ipv4, "[LAN IP %s] ", "eno1" },
-	{ ipv4, "[WLAN IP %s] ", "lo" },
-	{ datetime, "[%s]", "%F %r" }
+    /* function format          argument */
+    { ipv4, "[LAN IP %s] ", "eno1" },
+    { ipv4, "[WLAN IP %s] ", "lo" },
+    { datetime, "[%s]", "%a, %b %d|%I:%M:%S" }
 };
