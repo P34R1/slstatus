@@ -1,0 +1,4 @@
+slstatus
+config.h
+*.o
+*.tar*
