@@ -41,7 +41,7 @@
 			return NULL;
 
 		percent = 100 * ((total - free) - (buffers + cached)) / total;
-		return bprintf("%d", percent);
+		return bprintf("%02d", percent);
 	}
 
 	const char *

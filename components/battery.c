@@ -46,7 +46,7 @@
 		if (pscanf(path, "%d", &cap_perc) != 1)
 			return NULL;
 
-		return bprintf("%d", cap_perc);
+		return bprintf("%02d", cap_perc);
 	}
 
 	const char *
