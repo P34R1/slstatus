@@ -68,6 +68,6 @@ static const struct arg args[] = {
     { ipv4,          "⎸%s  ", "wlp3s0"   },
     { battery_perc, "%s%% + ", "BAT0"     },
     { battery_perc, "%s%%  ", "BAT1"     },
-    { ram_perc, "RAM %s%%  ", NULL       },
+    { ram_perc, "Mem %s%%  ", NULL       },
     { datetime, "%s", "%a, %b %d │ %I:%M" },
 };
