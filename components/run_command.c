@@ -8,6 +8,13 @@
 const char *
 run_command(const char *cmd)
 {
+  return run_command_to(cmd, buf, sizeof(buf));
+}
+
+
+const char *
+run_command_to(const char *cmd, char *buf, int count)
+{
 	char *p;
 	FILE *fp;
 
@@ -16,7 +23,7 @@ run_command(const char *cmd)
 		return NULL;
 	}
 
-	p = fgets(buf, sizeof(buf) - 1, fp);
+	p = fgets(buf, count, fp);
 	if (pclose(fp) < 0) {
 		warn("pclose '%s':", cmd);
 		return NULL;

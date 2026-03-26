@@ -58,6 +58,7 @@ const char *ram_used(const char *unused);
 
 /* run_command */
 const char *run_command(const char *cmd);
+const char *run_command_to(const char *cmd, char *buf, int count);
 
 /* swap */
 const char *swap_free(const char *unused);
@@ -82,3 +83,6 @@ const char *vol_perc(const char *card);
 /* wifi */
 const char *wifi_essid(const char *interface);
 const char *wifi_perc(const char *interface);
+
+/* mpris */
+const char *mpris(const char *unused);
