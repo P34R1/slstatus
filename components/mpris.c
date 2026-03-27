@@ -13,11 +13,11 @@ mpris(const char *unused)
     return NULL;
 
   char *divider;
-  if (strcmp(status, "Playing")) {
+  if (strcmp(status, "Playing") == 0) {
     divider = "";
-  } else if (strcmp(status, "Paused")) {
+  } else if (strcmp(status, "Paused") == 0) {
     divider = "│";
-  } else if (strcmp(status, "Stopped")) {
+  } else if (strcmp(status, "Stopped") == 0) {
     divider = "─";
   } else {
     return NULL;
